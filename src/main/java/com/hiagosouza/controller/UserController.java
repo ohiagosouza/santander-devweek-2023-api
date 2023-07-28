@@ -2,7 +2,6 @@ package com.hiagosouza.controller;
 
 import com.hiagosouza.domain.model.User;
 import com.hiagosouza.service.UserService;
-import jakarta.servlet.Servlet;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -11,10 +10,10 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/users")
-public class UserRestController {
+public class UserController {
     private final UserService userService;
 
-    public UserRestController(UserService userService){
+    public UserController(UserService userService){
         this.userService = userService;
     }
     @GetMapping("/{id}")
