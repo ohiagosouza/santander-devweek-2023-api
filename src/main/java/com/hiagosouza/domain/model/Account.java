@@ -1,6 +1,9 @@
 package com.hiagosouza.domain.model;
 
 import jakarta.persistence.*;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.math.BigDecimal;
 
@@ -63,3 +66,4 @@ public class Account {
     }
 
 }
+
